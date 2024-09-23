@@ -20,7 +20,7 @@ public class randarray {
                 System.out.println("The number at index " + indexnum + " is " + randnums[indexnum]);
                 valid = true;
             } catch (ArrayIndexOutOfBoundsException | InputMismatchException e) {
-                System.out.print("Input is invalid, try again with integer values. ");
+                System.out.print("Out of Bounds. ");
                 scanner.nextLine();
             }
         }
