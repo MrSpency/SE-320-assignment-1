@@ -17,6 +17,7 @@ public class twointsum {
                 int sum = num1 + num2;
                 System.out.println("The sum of the two numbers is: " + sum);
                 valid = true;
+                //Exception handling
             } catch (InputMismatchException e) {
                 System.out.print("Input is invalid, try again with integer values. ");
                 scanner.nextLine();
