@@ -1,0 +1,4 @@
+{
+    "terminal.explorerKind": "integrated",
+    "java.debug.settings.console": "externalTerminal"
+}
