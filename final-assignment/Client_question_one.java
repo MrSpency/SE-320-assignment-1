@@ -48,7 +48,7 @@ public class Client_question_one extends JFrame implements ActionListener {
 
         try {
             // Create a socket to connect to the server
-            Socket socket = new Socket("localhost", 8000);
+            Socket socket = new Socket("localhost (server ip address)", 8000);
             // Create an input stream to receive data from the server
             inputFromServer = new DataInputStream(socket.getInputStream());
             // Create an output stream to send data to the server
