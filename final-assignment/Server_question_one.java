@@ -40,10 +40,10 @@ public class Server_question_one extends JFrame {
                 double person_weight = inputFromClient.readDouble();
                 double person_height = inputFromClient.readDouble();
 
-                // Compute area
+                // Compute BMI
                 double bmi = person_weight / (person_height * person_height);
 
-                // Send area back to the client
+                // Send BMI back to the client
                 outputToClient.writeDouble(bmi);
 
                 jta.append("person wieght received from client: " + person_weight + '\n');

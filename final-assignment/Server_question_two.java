@@ -37,8 +37,9 @@ public class Server_question_two extends JFrame {
             while (true) {
                 Socket socket = serverSocket.accept();
                 jta.append("Client connected at " + new Date() + '\n');
-                Thread thread = new ThreadClass(socket);
-                thread.start();
+                //new thread created to handle communication
+                Thread thread = new ThreadClass(socket); 
+                thread.start(); //runs void run()
 
             }
         } catch (IOException ex) {
@@ -49,6 +50,7 @@ public class Server_question_two extends JFrame {
     class ThreadClass extends Thread {
         private Socket socket;
 
+        // initializes clients socket informaiton
         public ThreadClass(Socket socket){
             this.socket = socket;
         }
