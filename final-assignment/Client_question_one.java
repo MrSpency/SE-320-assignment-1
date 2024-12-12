@@ -24,7 +24,8 @@ public class Client_question_one extends JFrame implements ActionListener {
     public Client_question_one() {
         // Panel p to hold the label and text field
         JPanel p = new JPanel();
-        p.setLayout(new GridLayout(2,2));
+        //grid layout for 2 inputs
+        p.setLayout(new GridLayout(2,1));
         p.add(new JLabel("Enter person weight"));
         p.add(jtf1);
         p.add(new JLabel("Enter person height"));
